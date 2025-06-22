@@ -13,7 +13,9 @@ builder.Services.AddDbContext<InventarioDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddScoped<EmailService>();
-builder.Services.AddScoped<ExcelExportService>();
+builder.Services.AddScoped<ExcelExportService>(); 
+builder.Services.AddHttpClient();
+
 
 // --- Configurar JWT ---
 var jwtKey = builder.Configuration["Jwt:Key"];

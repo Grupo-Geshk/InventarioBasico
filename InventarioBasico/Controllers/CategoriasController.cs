@@ -1,4 +1,5 @@
 ﻿using InventarioBasico.Data;
+using InventarioBasico.Dto;
 using InventarioBasico.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +9,6 @@ namespace InventarioBasico.Controllers
 {
     [ApiController]
     [Route("categorias")]
-    [Authorize]
     public class CategoriasController : ControllerBase
     {
         private readonly InventarioDbContext _context;
@@ -21,29 +21,59 @@ namespace InventarioBasico.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var categorias = await _context.Categorias.ToListAsync();
+            var categorias = await _context.Categorias
+                .Select(c => new CategoriaDto
+                {
+                    Id = c.Id,
+                    Nombre = c.Nombre,
+                    Descripcion = c.Descripcion,
+                    FechaCreacion = c.FechaCreacion
+                })
+                .ToListAsync();
+
             return Ok(categorias);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Categoria categoria)
+        public async Task<IActionResult> Create([FromBody] CategoriaCreateDto dto)
         {
+            var categoria = new Categoria
+            {
+                Nombre = dto.Nombre,
+                Descripcion = dto.Descripcion
+                // Id y FechaCreacion se generan solos
+            };
+
             _context.Categorias.Add(categoria);
             await _context.SaveChangesAsync();
-            return Ok(categoria);
+
+            return Ok(new CategoriaDto
+            {
+                Id = categoria.Id,
+                Nombre = categoria.Nombre,
+                Descripcion = categoria.Descripcion,
+                FechaCreacion = categoria.FechaCreacion
+            });
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(Guid id, [FromBody] Categoria updated)
+        public async Task<IActionResult> Update(Guid id, [FromBody] CategoriaCreateDto dto)
         {
             var categoria = await _context.Categorias.FindAsync(id);
             if (categoria == null) return NotFound();
 
-            categoria.Nombre = updated.Nombre;
-            categoria.Descripcion = updated.Descripcion;
+            categoria.Nombre = dto.Nombre;
+            categoria.Descripcion = dto.Descripcion;
 
             await _context.SaveChangesAsync();
-            return Ok(categoria);
+
+            return Ok(new CategoriaDto
+            {
+                Id = categoria.Id,
+                Nombre = categoria.Nombre,
+                Descripcion = categoria.Descripcion,
+                FechaCreacion = categoria.FechaCreacion
+            });
         }
 
         [HttpDelete("{id}")]

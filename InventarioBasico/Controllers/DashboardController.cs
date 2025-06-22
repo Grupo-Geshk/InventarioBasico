@@ -7,7 +7,6 @@ namespace InventarioBasico.Controllers
 {
     [ApiController]
     [Route("dashboard")]
-    [Authorize]
     public class DashboardController : ControllerBase
     {
         private readonly InventarioDbContext _context;

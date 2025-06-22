@@ -23,6 +23,27 @@ namespace InventarioBasico.Controllers
             _config = config;
         }
 
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] RegisterDto dto)
+        {
+            // Validar que no exista el usuario
+            var exists = await _context.Usuarios.AnyAsync(u => u.Username == dto.Username);
+            if (exists) return BadRequest("El nombre de usuario ya existe");
+
+            // Crear usuario (de momento, password sin hash para prueba)
+            var user = new Usuario
+            {
+                Username = dto.Username,
+                PasswordHash = dto.Password,  // luego se mejora con hashing
+                Email = dto.Email
+            };
+
+            _context.Usuarios.Add(user);
+            await _context.SaveChangesAsync();
+
+            return Ok("Usuario registrado correctamente");
+        }
+
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDto dto)
         {

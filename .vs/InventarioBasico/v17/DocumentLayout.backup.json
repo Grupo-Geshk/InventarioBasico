@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|c:\\users\\gio\\source\\repos\\inventariobasico\\inventariobasico\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|solutionrelative:inventariobasico\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|c:\\users\\gio\\source\\repos\\inventariobasico\\inventariobasico\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|solutionrelative:inventariobasico\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|c:\\users\\gio\\source\\repos\\inventariobasico\\inventariobasico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|solutionrelative:inventariobasico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|c:\\users\\gio\\source\\repos\\inventariobasico\\inventariobasico\\controllers\\movimientoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|solutionrelative:inventariobasico\\controllers\\movimientoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|c:\\users\\gio\\source\\repos\\inventariobasico\\inventariobasico\\services\\excelexportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|solutionrelative:inventariobasico\\services\\excelexportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|c:\\users\\gio\\source\\repos\\inventariobasico\\inventariobasico\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|solutionrelative:inventariobasico\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|c:\\users\\gio\\source\\repos\\inventariobasico\\inventariobasico\\dto\\productocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|solutionrelative:inventariobasico\\dto\\productocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|c:\\users\\gio\\source\\repos\\inventariobasico\\inventariobasico\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|solutionrelative:inventariobasico\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|c:\\users\\gio\\source\\repos\\inventariobasico\\inventariobasico\\dto\\productodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|solutionrelative:inventariobasico\\dto\\productodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|c:\\users\\gio\\source\\repos\\inventariobasico\\inventariobasico\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{012287CD-C373-4C56-82D5-8F75A101EB2D}|InventarioBasico\\InventarioBasico.csproj|solutionrelative:inventariobasico\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +58,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "InventarioBasico\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "InventarioBasico\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T18:15:43.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Program.cs",
               "RelativeDocumentMoniker": "InventarioBasico\\Program.cs",
               "ToolTip": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Program.cs",
               "RelativeToolTip": "InventarioBasico\\Program.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAiwF8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T18:13:43.929Z",
+              "WhenOpened": "2025-06-22T15:42:56.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ImageController.cs",
+              "DocumentMoniker": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Controllers\\ImageController.cs",
+              "RelativeDocumentMoniker": "InventarioBasico\\Controllers\\ImageController.cs",
+              "ToolTip": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Controllers\\ImageController.cs",
+              "RelativeToolTip": "InventarioBasico\\Controllers\\ImageController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T15:42:41.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExcelExportService.cs",
+              "DocumentMoniker": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Services\\ExcelExportService.cs",
+              "RelativeDocumentMoniker": "InventarioBasico\\Services\\ExcelExportService.cs",
+              "ToolTip": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Services\\ExcelExportService.cs",
+              "RelativeToolTip": "InventarioBasico\\Services\\ExcelExportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T15:34:33.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MovimientosController.cs",
+              "DocumentMoniker": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Controllers\\MovimientosController.cs",
+              "RelativeDocumentMoniker": "InventarioBasico\\Controllers\\MovimientosController.cs",
+              "ToolTip": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Controllers\\MovimientosController.cs",
+              "RelativeToolTip": "InventarioBasico\\Controllers\\MovimientosController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAFAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T14:14:13.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "InventarioBasico\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "InventarioBasico\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T14:14:07.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductoCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Dto\\ProductoCreateDto.cs",
+              "RelativeDocumentMoniker": "InventarioBasico\\Dto\\ProductoCreateDto.cs",
+              "ToolTip": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Dto\\ProductoCreateDto.cs",
+              "RelativeToolTip": "InventarioBasico\\Dto\\ProductoCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T14:13:46.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "InventarioBasico\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Models\\Producto.cs",
+              "RelativeToolTip": "InventarioBasico\\Models\\Producto.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T14:06:31.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Dto\\ProductoDto.cs",
+              "RelativeDocumentMoniker": "InventarioBasico\\Dto\\ProductoDto.cs",
+              "ToolTip": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Dto\\ProductoDto.cs",
+              "RelativeToolTip": "InventarioBasico\\Dto\\ProductoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T14:03:47.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "InventarioBasico\\Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\Gio\\source\\repos\\InventarioBasico\\InventarioBasico\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "InventarioBasico\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T12:59:33.243Z",
               "EditorCaption": ""
             }
           ]

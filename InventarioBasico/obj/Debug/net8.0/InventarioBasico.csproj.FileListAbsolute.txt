@@ -153,3 +153,4 @@ C:\Users\Gio\source\repos\InventarioBasico\InventarioBasico\bin\Debug\net8.0\Six
 C:\Users\Gio\source\repos\InventarioBasico\InventarioBasico\bin\Debug\net8.0\System.IO.Packaging.dll
 C:\Users\Gio\source\repos\InventarioBasico\InventarioBasico\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\Gio\source\repos\InventarioBasico\InventarioBasico\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Gio\source\repos\InventarioBasico\InventarioBasico\obj\Debug\net8.0\InventarioBasico.sourcelink.json
