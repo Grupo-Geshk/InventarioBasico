@@ -11,7 +11,7 @@ RUN dotnet restore "InventarioBasico/InventarioBasico.csproj"
 COPY . .
 
 WORKDIR /app/InventarioBasico
-RUN dotnet publish "InventarioBasico.csproj" -c Release -o /out --no-restore
+RUN dotnet publish "InventarioBasico.csproj" -c Release -o /out
 
 # Imagen final: runtime (más liviana)
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
