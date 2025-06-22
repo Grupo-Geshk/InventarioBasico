@@ -1,19 +1,26 @@
-# Etapa de build
+# Imagen base oficial de .NET 8 SDK para build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
-COPY Turnero/*.csproj ./Turnero/
-RUN dotnet restore ./Turnero/Turnero.csproj
 
-COPY . .
-WORKDIR /src/Turnero
-RUN dotnet publish -c Release -o /app/publish
-
-# Etapa de runtime
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
-COPY --from=build /app/publish .
 
-ENV ASPNETCORE_URLS=http://+:5000
-EXPOSE 5000
+# Copiar el csproj y restaurar dependencias
+COPY ["InventarioBasico/InventarioBasico.csproj", "InventarioBasico/"]
+RUN dotnet restore "InventarioBasico/InventarioBasico.csproj"
 
-ENTRYPOINT ["dotnet", "Turnero.dll"]
+# Copiar el resto del código
+COPY . .
+
+WORKDIR /app/InventarioBasico
+RUN dotnet publish "InventarioBasico.csproj" -c Release -o /out --no-restore
+
+# Imagen final: runtime (más liviana)
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
+
+WORKDIR /app
+COPY --from=build /out .
+
+# Exponer puerto 8080
+ENV ASPNETCORE_URLS=http://+:8080
+EXPOSE 8080
+
+ENTRYPOINT ["dotnet", "InventarioBasico.dll"]
