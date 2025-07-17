@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace InventarioBasico.Controllers
@@ -23,6 +24,14 @@ namespace InventarioBasico.Controllers
             _config = config;
         }
 
+        private static string HashPassword(string password)
+        {
+            using var sha = SHA256.Create();
+            var bytes = Encoding.UTF8.GetBytes(password);
+            var hash = sha.ComputeHash(bytes);
+            return Convert.ToBase64String(hash);
+        }
+
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterDto dto)
         {
@@ -30,11 +39,10 @@ namespace InventarioBasico.Controllers
             var exists = await _context.Usuarios.AnyAsync(u => u.Username == dto.Username);
             if (exists) return BadRequest("El nombre de usuario ya existe");
 
-            // Crear usuario (de momento, password sin hash para prueba)
             var user = new Usuario
             {
                 Username = dto.Username,
-                PasswordHash = dto.Password,  // luego se mejora con hashing
+                PasswordHash = HashPassword(dto.Password),
                 Email = dto.Email
             };
 
@@ -50,8 +58,8 @@ namespace InventarioBasico.Controllers
             var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.Username == dto.Username);
             if (user == null) return Unauthorized("Usuario no encontrado");
 
-            // Para prueba simple: password en texto (¡luego agregar hash!)
-            if (user.PasswordHash != dto.Password) return Unauthorized("Contraseña incorrecta");
+            var incomingHash = HashPassword(dto.Password);
+            if (user.PasswordHash != incomingHash) return Unauthorized("Contraseña incorrecta");
 
             // Generar token
             var tokenHandler = new JwtSecurityTokenHandler();
